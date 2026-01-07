@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Waze Info - Commu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="static-style-editor">
+        <div>
+            <img id="switch-waze-la" src="Images/ui/logo_la.jpg" alt="">
+            <img id="switch-waze-sv" src="Images/ui/logo_savoie.png" alt="">
+            <select id="fondSelect" style="display: none;"></select>
+        </div>
+        <hr>
+        <img src="Images/ui/format_clear.png" onclick="document.execCommand('removeFormat');" alt="">
+        <hr>
+        <div>
+            <img src="Images/ui/bold-solid-full.svg" onclick="document.execCommand('bold');" alt="">
+            <img src="Images/ui/italic-solid-full.svg" onclick="document.execCommand('italic');" alt="">
+            <img src="Images/ui/underline-solid-full.svg" onclick="document.execCommand('underline');" alt="">
+        </div>
+        <hr>
+        <div>
+            <img src="Images/ui/align-left-solid-full.svg" onclick="document.execCommand('justifyLeft');" alt="">
+            <img src="Images/ui/align-center-solid-full.svg" onclick="document.execCommand('justifyCenter');" alt="">
+            <img src="Images/ui/align-right-solid-full.svg" onclick="document.execCommand('justifyRight');" alt="">
+            <img src="Images/ui/align-justify-solid-full.svg" onclick="document.execCommand('justifyFull');" alt="">
+        </div>
+        <hr>
+        <div>
+            <div style="display: flex;">
+                <img id="color-text" src="Images/ui/font-solid-full.svg" alt="">
+                <input type="color" name="" id="input-color-text">
+            </div>
+            <div style="display: flex;">
+                <img id="highlight-text" src="Images/ui/font-solid-full.svg" alt="">
+                <input type="color" name="" id="input-highlight-text">
+            </div>
+            <img id="textIncrease" src="Images/ui/text_increase.png" alt="">
+            <img id="textDecrease" src="Images/ui/text_decrease.png" alt="">
+            <select id="textSize" class="textSize">
+                <option></option>
+            </select>
+        </div>
+        <hr>
+        <img id="save" src="Images/ui/download-solid-full.svg" alt="">
+    </div>
+
+    <div id="loire-atlantique">
+        <div id="info-haut">INFO TRAVAUX</div>
+        <div id="info-bas">
+            <img id="waze-logo" src="Images/ui/wazeLA.png" alt="">
+            <div id="waze-acc">WazeLoireAtlantique</div>
+        </div>
+
+        <div id="barriere">
+            <svg class="barriere-hor" id="barriere-top" xmlns="http://www.w3.org/2000/svg"></svg>
+            <svg class="barriere-hor" id="barriere-bottom" xmlns="http://www.w3.org/2000/svg"></svg>
+            <svg class="barriere-vert" id="barriere-left" xmlns="http://www.w3.org/2000/svg"></svg>
+            <svg class="barriere-vert" id="barriere-right" xmlns="http://www.w3.org/2000/svg"></svg>
+        </div>
+
+        <div id="icon">
+            <img class="icon-haut-gauche" src="Images/waze_chantier.svg" alt="">
+            <img class="icon-bas-gauche" src="Images/waze_ouvrier.svg" alt="">
+            <img class="icon-haut-droit" src="Images/waze_ouvrier.svg" alt="">
+            <img class="icon-bas-droit" src="Images/waze_chantier.svg" alt="">
+        </div>
+
+        <div id="mosaic">
+            <div id="description">
+                <span contenteditable="true"> Texte </span>
+            </div>
+            <div id="mos-bot">
+                <img id="image" src="Images/ui/image-regular-full.svg" alt="">
+                <div id="date">
+                    <span contenteditable="true">Texte </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="savoie">
+        <div id="captureZone">
+            <div id="texteZone">
+                <span contenteditable="true">
+                    Écris ton texte ici…
+                </span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+<script src="script.js"></script>
